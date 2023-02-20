@@ -91,9 +91,9 @@ function restart() {
     fields = [];
     document.getElementById('game-over').classList.add('d-none');
     document.getElementById('restart-btn').classList.add('d-none');
-
+    
     for (let i = 1; i < 9; i++) {
-        document.getElementById('line-' + i).classList.add('d-none');
+        document.getElementById('line-' + i).style.transform = 'scaleX(0)';
     }
 
     for (let i = 0; i < 9; i++) {
